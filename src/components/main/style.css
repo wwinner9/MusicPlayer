@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0d0d0d; 
+}
+
+.mainContainer{
+    display: flex;
+    box-sizing: border-box;  
+}
+
+
+.mainCenterContent{
+    width: 88%;
+    max-width: 100%;
+    height: 100vh;  
+    overflow: hidden;
+}
+
+.mainCenterContent header{
+    display: flex;
+    flex-direction: row;
+    margin: 0; 
+    padding: 0ch;
+    height: 50vh ;
+    position: relative;
+}
+
+.mainTop{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.mainBase{
+    background-color: #0d0d0d;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.mainBase .legendSide{
+    width: 60%; 
+    padding-left: 18px;
+    color: white;
+}
+
+.mainBase .legendSide{
+    margin-top: 110px;
+}
+
+.mainMusicContent{
+    padding-left: 30px;
+}
+
+.mainMusicContent ul li{
+    margin-top: 40px;
+    list-style: none;
+    line-height: 30px;
+}
+
+.mainMusicContent ul li h1{
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+} 
+
+.mainMusicContent .legendArtist{
+    display: flex; 
+    margin-bottom: 30px;
+} 
+
+.mainMusicContent .legendArtist :nth-child(1){
+    margin-right: 20px;
+    font-size: 1.2rem; 
+    letter-spacing: 2px;
+} 
+
+.mainMusicContent .legendArtist :nth-child(2){
+    color: #979a97; 
+} 
+
+.mainMusicContent #btnListen{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #5773ff;
+    color: white;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: background .5s;
+
+} 
+
+.mainMusicContent #btnListen:hover{
+    border: 1px solid #979a97; 
+    background-color: inherit;
+    color :#5773ff;
+    cursor: pointer;
+    
+} 
+
+.mainMusicContent #btnFavorite{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid #979a97; 
+    background-color: inherit;
+    color :#5773ff;
+    transition: background .5s;
+
+} 
+
+.mainMusicContent #btnFavorite:hover{
+    border: none; 
+    background-color: #5773ff;
+    color :inherit;
+    cursor: pointer;
+} 
+
+
+.mainBase .photoSide{
+    width: 40%;
+    background: #000 url('../../assets/xxtent.jpg') no-repeat;
+    background-size: cover;
+}
+
+#musicStreaming{ 
+    display: flex;
+    width: 100%;  
+    padding: 0 10px 10px; 
+    height: 50vh;
+
+
+}
+
+.topArtists{
+    height: 49vh; 
+    display: flex;
+    flex-direction: column; 
+    width: 70%; 
+}
+
+.playerPlaylist{
+    display: flex;
+    width: 100%;
+}
+
+.playerPlaylist .playlistContent{
+    width: 50%;
+    height: 27vh;
+    background-color: #232323a6;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 2px #030303a6;
+    
+}
+
+.playerPlaylist .playlistContent img{
+    width: 2.5rem;
+    height: 2.3rem;
+    margin: 0 10px 0 0;
+    border-radius: 4px;   
+
+}
+
+.playerPlaylist .playlistContent .topPlaylist{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #fffc;
+
+}
+
+.topInfo :nth-child(1){ 
+    font-size: 17px;
+    font-weight: 900;
+    color: #fffd;
+    line-height: 25px;
+
+}
+
+.topInfo :nth-child(2){ 
+    font-size: 12px;
+    color: #fffc;
+
+}
+
+.playListMusic ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.playlistLeft {
+    display: flex;
+}
+
+.artistMusicInfoPlaylist p{
+    font-size: 14px;
+    color: #bebebe;
+}
+
+.artistMusicInfoPlaylist #musicName{
+    font-weight: 900;
+}
+
+.artistMusicInfoPlaylist #artist{
+    color: gray;
+    font-size: 12px;
+
+}
+
+
+.playlistRight{
+    display: flex;
+    padding-top: 10px;
+}
+
+.playlistRight p:nth-child(1){
+    margin-right:20px;
+    font-size: 13px;
+    color: gray;
+}
+
+.topPlaylist .playIcon{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.playListMusic ul{
+    height: 17vh; 
+    width: 100%;
+
+}
+
+.playerContent{
+    display: flex;
+    flex-direction: column;
+    width: 60%;  
+    margin: 10px 0 10px 15px;
+    border-radius: 5px;
+    height: 27vh; 
+
+}
+
+.playerContent .musicInfoPlayer{
+    display: flex;
+    padding: 8px 10px 0px 30px ;
+    justify-content: space-between;
+    background-color: #000;
+    border-radius: 5px;
+    height: 13vh;
+}
+
+.playInfoConcret{
+    display: flex;
+    margin-left: 10px;
+}
+
+.musicInfoPlayer .leftMusicPlayerSide h4{
+    margin-left:0 ;
+    margin-bottom: 15px; 
+}
+
+.musicInfoPlayer .leftMusicPlayerSide .infoMusicPlaying{
+    margin-left: 10px;
+}
+
+.musicInfoPlayer .leftMusicPlayerSide :nth-child(1){
+    color: #fff;
+    font-weight: 800;
+}
+
+.musicInfoPlayer .leftMusicPlayerSide :nth-child(2){
+    color: #979a97;
+    font-size: 14px;
+}
+ 
+
+.playerContent img{
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.imgPlus{ 
+    margin-top: 30px;
+}
+
+.imgPlus img{ 
+    width: 3.5rem;
+    height: 3rem;
+}
+
+.playerControls{
+    margin-top: 10px;
+    background-color: #5773ff;
+    height: 15vh;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 35px;
+    font-size: 24px;
+    color: #fff;
+
+}
+
+
+
+.playControl{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top:-15px ;
+    border-radius: 4px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.pauseControl{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #fff; 
+    align-items: center;
+    justify-content: center;
+    margin-top:-15px ;
+    border-radius: 4px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.artist{
+    height: 170px;
+    width: 100%;
+    padding-left:30px;
+    background-color: #232323a6; 
+    box-sizing:border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 2px #030303a6;
+}
+
+
+.artist .top{
+    background-color: transparent;
+    color: white; 
+}
+
+.artist .top :nth-child(1){  
+    font-weight: 800;
+}
+
+.artist .top :nth-child(2){  
+    font-size: 14px;
+}
+
+.artist nav ul{ 
+    display: flex;  
+    margin-right: 30px; 
+    overflow-x: auto; 
+}
+
+.artist nav ul::-webkit-scrollbar{
+    background-color: inherit; 
+    height: 5px; 
+    
+
+}
+.artist nav ul::-webkit-scrollbar-thumb{
+    background-color: #424242;  
+    height: 10px;
+    border-radius: 6px;
+
+}
+
+.artist nav ul::-webkit-scrollbar-track{ 
+}
+
+.artist nav ul li{ 
+    padding-right: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist nav ul li img{ 
+    width: 95px;
+    height: 75px;
+    border-radius: 5px; 
+    transition: .3s;
+    margin-bottom: 5px;
+}
+
+.artist nav ul li img:hover{ 
+    transform:scale(1.04) ;
+}
+
+.artist nav ul li p{ 
+    color: #bebebe; 
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+ 
+
+.mostPopularMusic{    
+    width: 40%;   
+    padding: 0 5px 0;
+}
+
+.mostPopularMusic img{ 
+    width: 3.5rem;
+    margin: 2px 0;
+}
+
+.mostPopularMusic h3 ,h4{ 
+    margin-left: 20px;
+}
+
+.mostPopularMusic ul{ 
+    padding: 0 10px 0;
+    overflow-y:auto ; 
+    height: 42vh;
+    scroll-behavior: smooth; 
+}
+
+.mostPopularMusic ul::-webkit-scrollbar{ 
+    background-color: inherit;
+    width: 2px;
+}
+
+.mostPopularMusic ul::-webkit-scrollbar-thumb{ 
+    background-color: #424242;
+}
+
+.mostPopularMusic h3{
+    color: #fff; 
+    font-size: 28px;
+    
+     
+}
+
+.mostPopularMusic h4{
+    color: gray;    
+     
+}
+
+#searchIcon{
+    display: none;
+}
+
+.mostPopularMusic ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0;
+    list-style: none;
+    width: 100%;
+    height: 50px; 
+    margin-top: 10px;
+    background-color: #232323a6;
+    border-radius: 5px;
+    transition: all .2s;
+    box-shadow: 1px 1px 8px 2px #030303a6;
+
+}
+
+.mostPopularMusic ul li:hover{
+    transform: scale(1.02);
+    border: 1px solid #5773ff;
+
+}
+
+.mostPopularMusic ul li p{
+    margin-top: 16px;
+    color: rgb(145, 145, 145);
+    font-size: 14px;
+
+}
+
+.mostPopularMusic ul li :nth-child(3){
+    color: #fff;
+}
+
+#menuIcon{
+    display: none;
+}
+
+
+@media screen and (max-width: 1400px){
+    .mostPopularMusic ul li :nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .mostPopularMusic {
+        display: none; 
+    }
+
+    .topArtists{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .sideleft {
+        display: none; 
+    }
+
+    #menuIcon{
+        display: block;
+    }
+
+    #legendMusicName{
+        font-size: 3rem;
+    }#legendMusicName{
+        font-size: 3rem;
+    }
+
+    .mainCenterContent{
+        width: 100%;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width:650px){
+    #searchIcon{
+        display: block;
+    }
+
+    #search{
+        display: none;
+    }
+
+    #legendMusicName{
+        font-size: 2.3rem;
+    }
+
+    #legendArtistName{
+        font-size: 1rem;
+    }
+
+    #listen{
+        font-size: .8rem;  
+    }
+
+    .playerContent{
+        width: 100%;
+    }
+    .playlistContent{
+        display: none;
+
+    }
+}
+
+
+

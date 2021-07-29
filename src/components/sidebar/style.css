@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    background-color: #0b0d14;
+    box-shadow: 1px 1px 15px .2px #01040f;
+    padding: 0 30px 0;
+    margin-right: 20px;   
+
+}
+
+.userAvatar{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+    box-shadow: 1px 12px 10px 1px #1b1d2321;
+    margin-bottom: 15px;
+}
+
+#uAvatar{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+}
+
+.userInfo{
+    text-align: center;
+}
+
+.userInfo :nth-child(1){
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.userInfo :nth-child(2){
+    font-size: .7rem;
+    color: #b2b5be;
+}
+
+#menu{
+    margin-top: 1px;
+}
+
+#menu li{
+    list-style: none; 
+    color:#717379; 
+}
+
+#menu li:hover{
+    color: #3a498a ; 
+    font-weight: 900;
+}
+
+#menu a, .musicsOp a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    padding-left: 18px;
+    line-height: 35px;
+    font-size: 0.8rem;
+    transition: background .5;
+}
+
+
+#menu a:hover{
+    color: #3a498a ;
+}
+
+#menu a:focus{
+    color: #3a498A;
+}
+
+article {
+    margin-top: 20px;
+}
+
+article p{
+    color: #717379;
+    line-height: 60px;
+}
+
+.musicsOp li{
+    list-style: none; 
+    color:#717379; 
+}
+.musicsOp li:hover{
+    
+    color: #3a498a ; 
+    font-weight: 900;
+}
+
+
+
